@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuSrGusto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;900&family=Satisfy&display=swap"
+        rel="stylesheet" type="text/css" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        #menu {
+            height: 1200px;
+            width: 1200px;
+            background-image: url('./srgusto.png');
+            background-repeat: no-repeat;
+            background-size: 1200px 1200px;
+        }
+
+        #menu-form {
+            position: relative;
+        }
+
+        #menu textarea,
+        #menu input {
+            position: absolute;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        #menu textarea {
+            top: 480px;
+            left: 125px;
+            width: 640px;
+            height: 550px;
+            /* position: relative; */
+            background-color: transparent;
+            border: solid 0px;
+            color: white;
+            resize: none;
+            text-align: center;
+            /* z-index: 1; */
+        }
+
+        .title{
+            top: 391px;
+            left: 285px;
+            width: 320px;
+            background-color: #da2a19;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 900;
+            border: 0px;
+        }
+
+        .price {
+            padding: 5px;
+            font-size: 45px;
+            border-radius: 40px;
+            text-align: center;
+            width: 190px;
+            outline: none;
+            color: #da2a19;
+            box-shadow: 0.2rem 0.8rem 1.6rem #000;
+            font-weight: 900;
+        }
+
+        .price+span {
+            position: absolute;
+            font-family: 'Satisfy', cursive;
+            font-size: 25px;
+            width: 150px;
+            color: white;
+            text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+
+        }
+
+        #menu-price1 {
+            top: 1030px;
+            left: 200px;
+        }
+
+        #menu-price1+span {
+            top: 1085px;
+            left: 300px;
+        }
+
+        #menu-price2 {
+            top: 1030px;
+            left: 500px;
+        }
+
+        #menu-price2+span {
+            top: 1085px;
+            left: 600px;
+        }
+
+        #btn-capture {
+            background-color: #da2a19;
+            color: white;
+            padding: 4px 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 1px solid #b12214;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="menu-config">
+        Font Size: <input type="number" id="config-fontsize" value="34" style="width: 40px;"> <br><br>
+        <button id="btn-capture">Download</button>
+    </form>
+    <hr>
+
+
+
+    <div id="menu">
+        <form id="menu-form">
+            <div class="menu-content">
+                <input type="text" class="title" id="menu-title" value="ALMUERZO">
+                <textarea id="menu-text">
+🍲Sopa de mote🍲
+-- -- PRINCIPIO -- --
+Habichuela guisada,
+Frijol con pezuña de cerdo
+-- 🍗 -- PROTEINA -- 🥩 --
+Carne
+Lomo a la plancha
+Albóndigas
+Acompañamiento 🍚Arroz, 🥗ensalada, croquetas de yuca, 
+🧃Jugo de lulo
+</textarea>
+<!-- 🤤POSTRE GRATIS🤤 -->
+            </div>
+            <div class="menu-price">
+
+                <input type="text" class="price" id="menu-price1" value="$ 7.000">
+                <span>en la mesa</span>
+                <input type="text" class="price" id="menu-price2" value="$ 8.000">
+                <span>para llevar</span>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"
+        integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

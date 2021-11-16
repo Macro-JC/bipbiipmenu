@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuSrGusto</title>
+</head>
+<body>
+<form id="form-menu">
+Font Size: <input type="number" id="menu-fontsize" value="20" style="width: 40px;"><br>
+Line Height: <input type="number" id="menu-lineheight" value="30" style="width: 40px;"><br>
+X: <input type="number" id="menu-x" value="80" style="width: 40px;">
+Y: <input type="number" id="menu-y" value="260" style="width: 40px;"><br>
+<textarea id="menu-text" cols="50" rows="10">
+Sopa de maíz 🌽
+-------------- MENÚ 1 --------------
+Arroz con pollo, papas patacon
+y guacamole 
+-------------- MENÚ 2 --------------
+Hullucos 
+Carne asada 
+Lomo de cerdo 
+Chuleta Valluna 
+Hígado encebollado 
+$7.000 en la mesa 
+$8.000 para llevar
+</textarea>
+</form>
+<hr>
+    <canvas width="600px" height="600px" id="menu" style="display:none"></canvas>
+    <img id="imgMenu" />
+
+    <script src="app.js"></script>
+</body>
+</html>
